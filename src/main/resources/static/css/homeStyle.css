@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background-color: rgb(255, 231, 189);
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  background-color: rgb(63, 138, 140);
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17vw;
+  box-sizing: border-box;
+}
+
+.lists {
+  background-color: rgb(12, 86, 121);
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* .title {
+text-align: center;
+font-family: Monaco, Monospace;
+color: rgb(229, 52, 11);
+} */
+
+.qr-code {
+  width: 10vw;
+  height: 15vh;
+}
+
+.image {
+  width: 9vw;
+  height: 9vh;
+}
+
+.title-image {
+  width: 550px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  width: 23%;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+}
+
+.player-count {
+  font-size: 1.5em;
+  color: white;
+}
+
+.horses-images{
+  width: 75px;
+  height: 75px;
+}
+

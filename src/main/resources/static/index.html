@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/homeStyle.css"/> 
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+     </head>
+     <body>
+        <div class="header">
+            <img class="title-image" src="images/title.png" alt="My Image">
+        </div>
+        <div class="image-section">
+            <p id="player-count" class="player-count">Number of players: 0</p>
+            <img class="qr-code" src="images/qrcode.png" alt="My Image"> 
+            <img class="image" onclick="location.href='/game'" src="images/StartGame.png" alt="My Image"> 
+            <!-- <p id="player-count" class="player-count">Number of players: 0</p>
+            <img class="image" src="images/qrcode.png" alt="My Image"> 
+            <button id="startGame" onclick="location.href='/game'" class="start-game-button">Start Game</button>
+            <button class="fake-game-button"></button> -->
+        </div>
+        <div class="lists">
+            <!-- This calls /getPlayers and adds them to the list -->
+           <ul id="HEARTS" class="list">
+              <img class="horses-images" src="images/HEARTS.png" alt="My Image">
+           </ul>
+           <ul id="CLUBS" class="list">
+              <img class="horses-images" src="images/CLUBS.png" alt="My Image">
+           </ul>
+           <ul id="DIAMONDS" class="list">
+            <img class="horses-images" src="images/DIAMONDS.png" alt="My Image">
+           </ul>
+           <ul id="SPADES" class="list">
+            <img class="horses-images" src="images/SPADES.png" alt="My Image">
+           </ul>
+        </div>
+
+        <script src="/js/displayPlayers.js"></script>
+
+     </body>
+</html>
