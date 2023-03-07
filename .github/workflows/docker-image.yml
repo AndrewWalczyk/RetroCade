@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build-docker-image:
+    name: Publish to Container Registry
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to Container Registry
+        run: docker login ${{secrets.DOCKER_LOGIN }} -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      - name: Build Container image
+        run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
+      - name: Publish Docker image
+        run: docker push ${{ secrets.DOCKER_REPO }}
