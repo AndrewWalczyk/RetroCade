@@ -6,7 +6,7 @@
 5. 
 
 ## General Info
-Horse Race is multiplayer betting card game hosted. The game is a full stack cloud native application hosted on OCI. <br />
+Horse Race is multiplayer betting card game. The game is a full stack cloud native application hosted on OCI. <br />
 <br />
 **Core OCI Services:** API Gateway, Serverless Functions, VCN, Container Instances, Container Registry, Resource Manager <br />
 **Backend:** Java, Maven, Spring Boot <br />
@@ -15,7 +15,8 @@ Horse Race is multiplayer betting card game hosted. The game is a full stack clo
  
 
 ## How To Play
-Pick the correct horse (Ace) to win the game. A horse will advance when a card from the deck with the corresponding suit is flipped. The first horse to advance seven times will win the game. However when all horses have advanced to a certain position the corresponding "trap card" is flipped. The horse with the same suit will move back one position.  
+#### Start the Application <br />
+<img width="736" alt="Screen Shot 2023-03-23 at 3 03 03 PM" src="https://user-images.githubusercontent.com/86196697/227340327-1a148356-2d94-4992-9bec-ff4401c3b1c4.png">
 
 ## Architecture Diagrams
 
